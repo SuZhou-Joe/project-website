@@ -2,8 +2,10 @@
 layout: post
 title:  "Index management UI enhancements"
 authors:
-- gbinlong
-- suzhou
+- Zhou Su
+- Hailong Cui
+- Binlong Gao
+- Xuesong Luo
 date: 2023-02-28
 categories:
  - technical-post
@@ -48,9 +50,11 @@ You can easily choose the source/destination from the dropdown, and we also prov
 ### 6. Split index
 
 When user choose to split an index, we'll check the status of that index, if it's not ready to be splitted, we'll provide actions that user can operate to make the index ready for splitting. We'll also provide a list of shard numbers the index can be splitted to so user does not need to calculate it manually.
+User can  specify number of replicas, associate the new index with existing index alias or new alias. They can also use JSON editor to specify any index setting as well. 
 
 ![Image: Split page]({{site.baseurl}}/assets/media/blog-images/2023-02-28-admin-panels-for-index-operations/split-index.jpg){:.img-fluid }
 ![Image: Split page]({{site.baseurl}}/assets/media/blog-images/2023-02-28-admin-panels-for-index-operations/split-index-1.jpg){:.img-fluid }
+
 ### 7. Shrink index operation
 
 Shrink index operation is used to shrink an existing index into a new index with fewer primary shards.
